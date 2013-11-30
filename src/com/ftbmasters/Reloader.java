@@ -42,7 +42,7 @@ public class Reloader extends JavaPlugin {
         
 
 public static void reloadMasters(Player player) {
-	if (!(player.hasPermission("plugman.admin"))) {
+	if (!(player.hasPermission("masters.plugin.op"))) {
     	player.sendMessage(ChatColor.RED + "Sorry, you lack sufficient privileges to perform this action.");
         return;
     }
@@ -57,7 +57,7 @@ public static void reloadMasters(Player player) {
         String pluginName = targetPlugin.getDescription().getName();
         boolean error = false;
 
-        if (!(sender.hasPermission("plugman.admin"))) {
+        if (!(sender.hasPermission("masters.plugin.op"))) {
         	 sender.sendMessage(ChatColor.RED + "Sorry, you lack sufficient privileges to perform this action.");
             return;
         }
