@@ -2,3 +2,4 @@ name: Reload Worker
 author: iPhysX
 version: 1.0
 main: com.ftbmasters.Reloader
+depend: [Masters]
